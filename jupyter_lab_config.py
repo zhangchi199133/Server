@@ -684,7 +684,7 @@ c = get_config()  #noqa
 #  
 #          Takes precedence over allow_origin_pat.
 #  Default: ''
-# c.ServerApp.allow_origin = '*'
+c.ServerApp.allow_origin = '*'
 
 ## Use a regular expression for the Access-Control-Allow-Origin header
 #  
@@ -715,11 +715,11 @@ c = get_config()  #noqa
 #         Local IP addresses (such as 127.0.0.1 and ::1) are allowed as local,
 #         along with hostnames configured in local_hostnames.
 #  Default: False
-# c.ServerApp.allow_remote_access = True
+c.ServerApp.allow_remote_access = True
 
 ## Whether to allow the user to run the server as root.
 #  Default: False
-# c.ServerApp.allow_root = True
+c.ServerApp.allow_root = True
 
 ## Allow unauthenticated access to endpoints without authentication rule.
 #  
@@ -898,7 +898,7 @@ c = get_config()  #noqa
 
 ## The IP address the Jupyter server will listen on.
 #  Default: 'localhost'
-# c.ServerApp.ip = '0.0.0.0'
+c.ServerApp.ip = '0.0.0.0'
 
 ## Supply extra arguments that will be passed to Jinja environment.
 #  Default: {}
@@ -994,7 +994,7 @@ c = get_config()  #noqa
 
 ## DEPRECATED, use root_dir.
 #  Default: ''
-# c.ServerApp.notebook_dir = '/home/ubuntu/workspace'
+c.ServerApp.notebook_dir = '/home/ubuntu/workspace'
 
 ## Whether to open in a browser after starting.
 #                          The specific browser used is platform dependent and
@@ -1002,11 +1002,11 @@ c = get_config()  #noqa
 #                          module, unless it is overridden using the --browser
 #                          (ServerApp.browser) configuration option.
 #  Default: False
-# c.ServerApp.open_browser = False
+c.ServerApp.open_browser = False
 
 ## DEPRECATED in 2.0. Use PasswordIdentityProvider.hashed_password
 #  Default: ''
-# c.ServerApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$uCS+Kh6vOL315e8b5Aovfg$kAbwv4CVi13xew0xxXeXlIeG8A65zYsjyWKpx4/AlEw'
+c.ServerApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$uCS+Kh6vOL315e8b5Aovfg$kAbwv4CVi13xew0xxXeXlIeG8A65zYsjyWKpx4/AlEw'
 
 ## DEPRECATED in 2.0. Use PasswordIdentityProvider.password_required
 #  Default: False
@@ -1014,7 +1014,7 @@ c = get_config()  #noqa
 
 ## The port the server will listen on (env: JUPYTER_PORT).
 #  Default: 0
-# c.ServerApp.port = 8888
+c.ServerApp.port = 8888
 
 ## The number of additional ports to try if the specified port is not available
 #  (env: JUPYTER_PORT_RETRIES).
